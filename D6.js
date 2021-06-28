@@ -152,7 +152,7 @@ function isThisAnEmail (str) {
 
 function whatDayIsIt () {
 
-  let d = new Date();
+  let d = new Date()
   let today = d.getDay() 
 
     if ( today ===1){
@@ -177,7 +177,7 @@ function whatDayIsIt () {
    }
 }
 
-console.log(whatDayIsIt())
+// console.log(whatDayIsIt())
 
 
 /* Ex.8
@@ -191,13 +191,63 @@ console.log(whatDayIsIt())
     }
 */
 
+function rollTheDices (number) {
+  
+  let resultDice = []
+  let sum
+  let totalSum
+  
+  let totalResult = {
+    sum: totalSum,
+    values: resultDice
+   }
+
+  for (let i=0; i<number; i++) {
+    sum = dice()
+    totalSum +=sum
+    resultDice.push(sum)
+  }
+//   for (let i=0; i<resultDice.length; i++){
+//  totalSum += resultDice[i]
+//  } 
+
+ return totalResult
+ }
+
+
+ 
+//  console.log(rollTheDices(10))
+
+ 
 /* Ex.9
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
 */
 
+
+function howManyDays () {
+
+}
+
 /* Ex.10
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.
 */
+
+function isTodayMyBirthday () {
+let d = new Date()
+let month = d.getMonth()
+let day = d.getDate()
+
+if (month === 5 && day === 9) {
+  console.log("Today is your birth, get drunk!!!")
+} else {
+  console.log("....you wish")
+}
+
+// return d
+// return month
+// return day
+}
+// console.log(isTodayMyBirthday())
 
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of this file!
@@ -205,6 +255,10 @@ console.log(whatDayIsIt())
 /* Ex.11
    Write a function called "deleteProp" which receives an object and a string as parameters, and returns the given object after deleting its property named as the given string.
 */
+
+
+
+
 
 /* Ex.12 
     Write a function called "olderMovie" which finds the oldest movie in the array provided at the end of this file.
