@@ -405,11 +405,20 @@ let oldestOne = movies[0].Year
   }
   return oldestOne
 }
-console.log(oldestMovies())
+// console.log(oldestMovies())
 
 /* Ex.13
     Write a function called "countMovies" which returns the number of movies contained in the array provided at the end of this file.
 */
+
+function countMovies (){
+  let count = 0
+  for (let i=0; i<movies.length; i++) {
+  count ++
+    }
+  return count
+}
+// console.log(countMovies())
 
 /* Ex.14
     Write a function called "onlyTheTitles" which creates an array with just the titles of the movies provided in the array at the end of the file.
