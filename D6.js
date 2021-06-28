@@ -432,16 +432,32 @@ for (let i=0; i<movies.length; i++){
 }
   return theTitles
 }
-console.log(onlyTheTitles())
+// console.log(onlyTheTitles())
 
 
 /* Ex.15
    Write a function called "onlyInThisMillennium" which returns only the movies produced in this millennium.
 */
 
+function onlyInThisMillennium () {
+  let inThisMillenium = []
+  for (let i=0; i<movies.length; i++) {
+    if (movies[i].Year>2000){
+      inThisMillenium += movies[i].Year +", "
+    } else {
+      inThisMillenium
+    }
+  }
+  return inThisMillenium
+}
+// console.log(onlyInThisMillennium())
+
+
 /* Ex.16 
     Write a function called "getMovieById" which receives an id as a parameter and returns the movie with the given id.
 */
+
+
 
 /* Ex.17
     Write a function called "sumAllTheYears" which returns the sum of all the years in which the movies provided have been produced.
