@@ -85,10 +85,21 @@ function dice(){
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
 */
 
+function whoIsBigger (a, b){
+  return (a>b)? a :b
+}
+
+// console.log(whoIsBigger(10,5))
+
 /* Ex.3
     Write a function called "splitMe" which receives a string as a parameter and returns an array with every word in that string.
     Ex. splitMe("I love coding") => returns ["I", "Love", "Coding"]
 */
+
+function splitMe(str){
+  return str.split(" ")
+  }
+// console.log(splitMe("hello how are you"))
 
 /* Ex.4
     Write a function called "deleteOne" which receives a string and a boolean as parameters. If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
