@@ -193,19 +193,21 @@ function whatDayIsIt () {
 
 function rollTheDices (number) {
   
-  let resultDice = []
-  let sum
-  let totalSum
+  // let resultDice = []
+  // let sum: 0
+  // let totalSum
   
   let totalResult = {
-    sum: totalSum,
-    values: resultDice
+    sum: 0,
+    values: []
    }
 
   for (let i=0; i<number; i++) {
-    sum = dice()
-    totalSum +=sum
-    resultDice.push(sum)
+    // sum = dice()
+    // totalSum +=sum
+    totalResult.sum+=dice()
+    totalResult.values.push(dice())
+    // resultDice.push(sum)
   }
 //   for (let i=0; i<resultDice.length; i++){
 //  totalSum += resultDice[i]
@@ -216,7 +218,7 @@ function rollTheDices (number) {
 
 
  
-//  console.log(rollTheDices(10))
+  // console.log(rollTheDices(10))
 
  
 /* Ex.9
@@ -256,7 +258,19 @@ if (month === 5 && day === 9) {
    Write a function called "deleteProp" which receives an object and a string as parameters, and returns the given object after deleting its property named as the given string.
 */
 
+function deleteProp (object, string) {
 
+
+  object = {
+   name: "Eddy",
+   string: "sth"
+  }
+delete object.string
+
+  return object
+ }
+
+ console.log(deleteProp("Data", "hello"))
 
 
 
