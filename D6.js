@@ -146,13 +146,39 @@ function isThisAnEmail (str) {
 
 // console.log(isThisAnEmail("he@llo.com"))
 
-
-
-
-
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
+
+function whatDayIsIt () {
+
+  let d = new Date();
+  let today = d.getDay() 
+
+    if ( today ===1){
+    console.log("Today is Monday")
+  } else if (today ===2) { 
+    console.log("Today is Tuesday")
+   }
+   else if (today ===3) { 
+    console.log("Today is Wednesday")
+   }
+   else if (today ===4) { 
+    console.log("Today is Thursday")
+   }
+   else if (today ===5) { 
+    console.log("Today is Friday")
+   }
+   else if (today ===6) { 
+    console.log("Today is Saturday")
+   }
+   else if (today ===0) { 
+    console.log("Today is Sunday")
+   }
+}
+
+console.log(whatDayIsIt())
+
 
 /* Ex.8
     Write a function called "rollTheDices" which receives a number as a parameter.
