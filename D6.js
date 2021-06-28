@@ -78,7 +78,8 @@ me.skills.pop()
 function dice(){
   return Math.floor((Math.random()*6)+1)
 }
-console.log(dice())
+
+// console.log(dice())
 
 /* Ex.2 
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
