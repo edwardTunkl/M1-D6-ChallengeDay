@@ -120,11 +120,35 @@ function onlyLetters (str) {
 
   return str.replace(1, "").replace(2, "").replace(3, "").replace(4, "").replace(5, "").replace(6, "").replace(7, "").replace(8, "").replace(9, "").replace(0, "")
 }
-console.log(onlyLetters("hello123isworking?"))
+
+// console.log(onlyLetters("hello123isworking?"))
 
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
 */
+
+function isThisAnEmail (str) {
+
+  let arr = str.split("")
+
+  for (let i=0; i< arr.length; i++ ) {
+    
+    if (arr[i] === "@"){
+       result = true
+       break
+    } else {
+      result = false
+    }
+  }
+    return result
+
+}
+
+// console.log(isThisAnEmail("he@llo.com"))
+
+
+
+
 
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
