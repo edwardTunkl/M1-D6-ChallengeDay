@@ -116,6 +116,12 @@ function deleteOne (str, bool) {
    Ex.: onlyLetters("I have 4 dogs")  => returns "I have  dogs"
 */
 
+function onlyLetters (str) {
+
+  return str.replace(1, "").replace(2, "").replace(3, "").replace(4, "").replace(5, "").replace(6, "").replace(7, "").replace(8, "").replace(9, "").replace(0, "")
+}
+console.log(onlyLetters("hello123isworking?"))
+
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
 */
